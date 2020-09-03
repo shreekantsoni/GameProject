@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Code</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style4.css" />
+
+    <!-- Font JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar  -->
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <h3><b>Masai School</b></h3>
+          <strong>MS</strong>
+        </div>
+
+        <ul class="list-unstyled components">
+          <li class="active">
+            <a href="index.html" data-toggle="collapse" aria-expanded="false">
+              <i class="fas fa-gamepad"></i>
+              &nbsp; Quiz Game
+            </a>
+          </li>
+          <li>
+            <a href="page2.html">
+              <i class="fab fa-steam-symbol"></i>
+              Tic-Tac-Toe Game
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Page Content -->
+      <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+          <div class="container-fluid">
+            <button id="sidebarCollapse" class="btn-outline-secondary">
+              <i class="fas fa-align-left"></i>
+            </button>
+            <h3 class="float-right text-white">Masai School Quiz Game</h3>
+            <div class="clearfix"></div>
+          </div>
+        </nav>
+
+        <div class="mx-4">
+          <div id="main">
+            <!-- open main div -->
+
+            <h1 class="text-primary">Quiz</h1>
+            <form id="form1">
+              <h3>Q-). What Does HTML Stand For?</h3>
+              <label for="var_string"><input type="radio" name="q1" value="20" id="var_string" required />Hyper Text Markup Language</label>
+              <label for="var_join"><input type="radio" name="q1" value="0" id="var_join" />Hyper Type Markup Language</label><br />
+
+              <h3>Q-) What tag is Used to Display a Picture in a HTML page?</h3>
+              <label for="sub_string"><input type="radio" name="q2" value="20" id="sub_string" required />img</label>
+              <label for="sub_join"><input type="radio" name="q2" value="0" id="sub_join" />image</label><br />
+
+              <h3>Q-) CSS stands for?</h3>
+              <label for="cat_string"><input type="radio" name="q3" value="0" id="cat_string" required />Creating Style Source.</label>
+              <label for="cat_join"><input type="radio" name="q3" value="20" id="cat_join" />Cascading Style Sheets.</label><br />
+
+              <h3>Q-) Javascript is _________ language?</h3>
+              <label for="if_string"><input type="radio" name="q4" value="0" id="if_string" required />Application</label>
+              <label for="if_join"><input type="radio" name="q4" value="20" id="if_join" />Scripting</label><br />
+
+              <h3>Q-) What is the correct JavaScript syntax to write "Hello World"?</h3>
+              <label for="string"><input type="radio" name="q5" value="0" id="d-string" required />System.out.println("Hello World")</label>
+              <label for="join"><input type="radio" name="q5" value="20" id="d-join" />document.write("Hello World")</label><br />
+
+              <button type="submit" value="Submit">Submit</button>
+            </form>
+
+            <p>Your grade is: <span id="grade">__</span></p>
+            <p id="grade2"></p>
+          </div>
+          <!-- close main div -->
+
+          <br />
+        </div>
+      </div>
+      <hr />
+    </div>
+     <img src="hero-img.png" alt="image" />
+    <a class="fixed-bottom text-right badge p-4" href="#"><h4>&#x219F;</h4></a>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
